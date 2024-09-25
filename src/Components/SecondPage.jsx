@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-
+import { Link } from 'react-router-dom';
 const Paragraphs = [
 
     {discription:"hello my name is nauman"},
@@ -18,12 +18,13 @@ useEffect (() => {const timer = setTimeout(()=> {setParagraphs(prev => (prev + 1
 const handleBulletClick = (index) => {setParagraphs(index);} ;
 
   return (
+    <div>
     <div className='bg-black h-[500px] items-center text-[50px] text-red-700 font-bold font-serif flex text-center justify-center'>
     {Paragraphs[Paragraph].names} 
     <br />
     {Paragraphs[Paragraph].discription}
    
-    <div className=" absolute bottom-[400px] flex space-x-4">
+    <div className=" absolute bottom-[400px] flex  space-x-4">
         {Paragraphs.map((_, index) => (
           <div
             key={index}
@@ -32,10 +33,13 @@ const handleBulletClick = (index) => {setParagraphs(index);} ;
             }`}
             onClick={() => handleBulletClick(index)}
           />
+          
         ))}
       </div>
-
-
+</div>
+<div className='m-10 text-center justify-center'>
+<Link to = "/ThirdPage"><button>Go to slider number 3 / page 3</button></Link>
+</div>
 </div>
 );
 }

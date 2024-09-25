@@ -6,6 +6,7 @@ import './index.css'
 import Home from './Components/Home.jsx'
 import NextPage from './NextPage.jsx'
 import SecondPage from './Components/SecondPage.jsx'
+import Thirdpage from './Components/Thirdpage.jsx'
 
 
 
@@ -26,6 +27,10 @@ element:<Home/>,
   {
     path:"/SecondPage",
     element:<SecondPage/>,
+  },
+  {
+    path:"/ThirdPage",
+    element:<Thirdpage/>,
   },
 
 ])
