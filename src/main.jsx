@@ -4,9 +4,10 @@ import { BrowserRouter, RouterProvider, createBrowserRouter } from "react-router
 import App from './App.jsx'
 import './index.css'
 import Home from './Components/Home.jsx'
-import NextPage from './NextPage.jsx'
+import NextPage from './Components/NextPage.jsx'
 import SecondPage from './Components/SecondPage.jsx'
 import Thirdpage from './Components/Thirdpage.jsx'
+import ForthPage from './Components/ForthPage.jsx'
 
 
 
@@ -31,6 +32,10 @@ element:<Home/>,
   {
     path:"/ThirdPage",
     element:<Thirdpage/>,
+  },
+  {
+    path:"/ForthPage",
+    element:<ForthPage/>,
   },
 
 ])

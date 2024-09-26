@@ -35,6 +35,8 @@ const Thirdpage = () => {
                 </div>
 
                 <Link to = '/'><button>go back to home page</button></Link>
+                <br />
+                <Link to = "/Forthpage"><button>or go to the last page </button></Link>
             </div>
         </div>
     )

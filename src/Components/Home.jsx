@@ -45,6 +45,10 @@ function Home() {
      <Link to = "/NewPage"> <button>Click here to go to next page</button></Link>
      <br />
      <Link to = "/SecondPage"> <button>Click here to go to Second page</button></Link>
+     <br />
+     <Link to = "/ThirdPage"> <button>Click here to go to Third page</button></Link>
+     <br />
+     <Link to = "/ForthPage"> <button>Click here to go to Forth page</button></Link>
     </div>
   )
 }
